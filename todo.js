@@ -3,26 +3,26 @@ const listContainer = document.getElementById("list-container");
 
 function clickit() {
     if (inputBox.value === '') {
-        // alert("ghpeubgvr!")
-
-    }
+     
+}
     else {
-        let li = document.createElement("LI");
+        let li = document.createElement("li");
         li.innerHTML = inputBox.value;
-        listContainer.appendChild(li);
-        let span = document.createElement("SPAN");
-        span.innerHTML = " x ";
+        listContainer.insertBefore(li, listContainer.firstChild);
+        let span = document.createElement("span");
+        span.innerHTML = " &#9876 ";
         li.appendChild(span);
+   
     }
     inputBox.value = "";
 }
 
-listContainer.addEventListener("click", function (e) {
-    if (e.target.tagName === "LI") {
-        e.target.classList.toggle("check");
+listContainer.addEventListener("click", function (a) {
+    if (a.target.tagName === "LI") {
+        a.target.classList.toggle("check");
 
     }
-    else if (e.target.tagName === "SPAN") {
-        e.target.parentElement.remove();
+    else if (a.target.tagName === "SPAN") {
+        a.target.parentElement.remove();
     }
 }, false);

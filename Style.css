@@ -4,11 +4,12 @@
   box-sizing: border-box;
 }
 
+
 .container {
   width: 100%;
   min-height: 100vh;
   padding: 10px;
-  /* background-image: linear-gradient(to right, #FCEF04, #DC419B); */
+ 
 }
 
 .heading-app {
@@ -41,6 +42,7 @@ input {
   outline: none;
   background: transparent;
   padding: 15px;
+  width: 350px;
 }
 
 button {
@@ -50,7 +52,6 @@ button {
   background: black;
   color: white;
   font-size: 15px;
-  /* cursor: pointer; */
   border-radius: 10px;
 
 }
@@ -83,7 +84,8 @@ ul li.check {
 }
 
 ul li.check::before {
-  background-image: url(image/greenthumbup.png);
+  background-image: url(image/listpic.gif);
+  background-color: black;
 }
 
 ul li SPAN {
@@ -102,4 +104,5 @@ ul li SPAN {
 ul li SPAN:hover {
   background-color: #da0000;
   border-radius: 10px;
+  
 }
