@@ -3,16 +3,20 @@ const listContainer = document.getElementById("list-container");
 
 function clickit() {
     if (inputBox.value === '') {
-     
-}
+        document.getElementById("error").innerHTML = "Please Fill The Task "
+        //   document.getElementById("input-box").innerHTML.style.border="2px solid red";
+        //  document.getElementById("input-box").style.border= "1px solid red"; 	
+
+    }
     else {
+        document.getElementById("error").innerHTML = ""
         let li = document.createElement("li");
         li.innerHTML = inputBox.value;
         listContainer.insertBefore(li, listContainer.firstChild);
         let span = document.createElement("span");
         span.innerHTML = " &#9876 ";
         li.appendChild(span);
-   
+
     }
     inputBox.value = "";
 }

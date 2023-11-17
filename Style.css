@@ -3,22 +3,33 @@
   margin: 0px;
   box-sizing: border-box;
 }
+body{
+  font-family:Arial, Helvetica, sans-serif;
+}
 
 
-.container {
+.container{
   width: 100%;
   min-height: 100vh;
-  padding: 10px;
+  padding: 70px;
+  background-image:url(image/cloudpic2.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+ 
  
 }
 
 .heading-app {
   width: 100%;
   max-width: 540px;
-  background-image: linear-gradient(to top,rgb(111, 111, 115), #F4DF4EFF);
+  background-image: linear-gradient(to top, rgb(111, 111, 115), rgb(244, 223, 78));
   margin: 100px auto 20px;
   padding: 40px 30px 70px;
   border-radius: 15px;
+  box-shadow: burlywood;
+  box-shadow: 2px 5px 20px 12px  ;
+  
 }
 
 .heading-app h1 {
@@ -42,7 +53,7 @@ input {
   outline: none;
   background: transparent;
   padding: 15px;
-  width: 350px;
+  width: 350px; 
 }
 
 button {
@@ -105,4 +116,9 @@ ul li SPAN:hover {
   background-color: #da0000;
   border-radius: 10px;
   
+}
+#error {
+  color: #da0000;
+  text-align: center;
+  margin-top: 10px;
 }
