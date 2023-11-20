@@ -14,7 +14,7 @@ function clickit() {
         li.innerHTML = inputBox.value;
         listContainer.insertBefore(li, listContainer.firstChild);
         let span = document.createElement("span");
-        span.innerHTML = " &#9876 ";
+        span.innerHTML = " &#9249 ";
         li.appendChild(span);
 
     }

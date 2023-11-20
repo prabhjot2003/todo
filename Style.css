@@ -95,8 +95,8 @@ ul li.check {
 }
 
 ul li.check::before {
-  background-image: url(image/listpic.gif);
-  background-color: black;
+  background-image: url(image/greenfixcheck.png);
+ 
 }
 
 ul li SPAN {
